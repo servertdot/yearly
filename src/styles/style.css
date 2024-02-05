@@ -1,0 +1,28 @@
+@import './vars.css';
+
+:root {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: var(--black-color);
+  background-color: var(--white-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: default;
+}
+
+li {
+  list-style: none;
+}
+
+#app {
+  &:focus {
+    outline: 0;
+  }
+}
