@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "dayjs": "^1.11.10",
