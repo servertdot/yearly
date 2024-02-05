@@ -2,11 +2,8 @@
   import { ref } from 'vue';
 
   import TaskComponent from './Task.vue';
-  import Button from './Button.vue';
   import Input from './Input.vue';
-  import { addTask, removeTask, taskList, draggingElement, selectedTaskId } from '../assets/store';
-import { MOCK_TASKS } from '../assets/constants';
-import { setStorageValue } from '../assets/utils';
+  import { taskList, draggingElement, selectedTaskId } from '../assets/store';
 
 // const selectedTask = ref(0)
   const shouldShowModal = ref(false);

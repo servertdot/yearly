@@ -6,7 +6,7 @@
   const inputRef = ref()
 
   effect(() => {
-    inputRef.value && inputRef.value.addEventListener('keydown', e => {
+    inputRef.value && inputRef.value.addEventListener('keydown', (e: KeyboardEvent) => {
       if (e.key === 'Enter') {
         addTask(inputValue.value).then((res) => res && (inputValue.value = ''));
       }
