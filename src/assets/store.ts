@@ -12,7 +12,7 @@ export const selectedTaskId = ref(0);
 export const addTask = async (title: string) => {
   const newTask: Task = {
     id: taskList.value.length + 1,
-    title: title + '-' + taskList.value.length + 1,
+    title,
     completed: false,
     notes: []
   };
