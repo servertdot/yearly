@@ -28,9 +28,6 @@ export const addTask = async (title: string) => {
 }
 
 export const removeTask = async (id: number) => {
-  // const index = taskList.value.findIndex(task => task.id === id);
-  // taskList.value.splice(index, 1);
-  // console.log({id, index, taskList: taskList.value})
   taskList.value = taskList.value.filter(item => item.id !== id);
   setStorageValue('taskList', taskList.value)
 }
